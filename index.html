@@ -90,7 +90,7 @@
             <!-- Header -->
             <header class="mb-8">
                 <div class="flex justify-between items-center mb-4">
-                    <h1 class="text-4xl font-bold">Splatgrave C</h1>
+                    <h1 class="text-4xl font-bold">C</h1>
                     
                     <!-- Dark Mode Toggle -->
                     <button 
@@ -114,7 +114,7 @@
                     <input 
                         type="text" 
                         id="search" 
-                        placeholder="Search notes..."
+                        placeholder="Search knowledgebase..."
                         class="w-full p-2 border rounded-lg bg-white dark:bg-dark-surface dark:border-gray-600 dark:text-gray-100"
                         oninput="filterContent(this.value)"
                     >
@@ -132,12 +132,14 @@
                     </p>
                     
                     <div class="relative">
-                        <button class="copy-button" onclick="copyCode(this)">Copy</button>
-                        <pre><code class="language-c">int num = 42;
-int *ptr = &num;  // ptr stores the address of num
+                        <button class="copy-button" onclick="copyCode(this)">copy</button>
+                        <pre><code class="language-c">
+int num = 42;
+int *ptr = &amp;num;  // ptr stores the address of num
 
 printf("Value: %d\n", *ptr);    // Prints: 42
-printf("Address: %p\n", ptr);   // Prints memory address</code></pre>
+printf("Address: %p\n", ptr);   // Prints memory address
+						</code></pre>
                     </div>
                 </section>
 
@@ -149,16 +151,17 @@ printf("Address: %p\n", ptr);   // Prints memory address</code></pre>
                     </p>
                     
                     <div class="relative">
-                        <button class="copy-button" onclick="copyCode(this)">Copy</button>
-                        <pre><code class="language-c">// Allocate memory for an integer
-int *ptr = (int*)malloc(sizeof(int));
+                        <button class="copy-button" onclick="copyCode(this)">copy</button>
+                        <pre><code class="language-c">
+							// Allocate memory for an integer
+							int *ptr = (int*)malloc(sizeof(int));
 
-// Use the memory
-*ptr = 42;
+							// Use the memory
+							*ptr = 42;
 
-// Free the memory when done
-free(ptr);
-ptr = NULL;  // Good practice to avoid dangling pointers</code></pre>
+							// Free the memory when done
+							free(ptr);
+							ptr = NULL;  // Good practice to avoid dangling pointers</code></pre>
                     </div>
                 </section>
 
@@ -170,7 +173,7 @@ ptr = NULL;  // Good practice to avoid dangling pointers</code></pre>
                     </p>
                     
                     <div class="relative">
-                        <button class="copy-button" onclick="copyCode(this)">Copy</button>
+                        <button class="copy-button" onclick="copyCode(this)">copy</button>
                         <pre><code class="language-c">struct Person {
     char name[50];
     int age;
